@@ -2,4 +2,18 @@
 
 @main("Welcome to Play") {
   <h1>Welcome to Play!</h1>
+
+  <p>Here's a list of links for this app:</p>
+
+  <ul>
+    <li><a href=@routes.HomeController.index()>Home</a></li>
+    <li><a href=@routes.HomeController.public()>Public page</a></li>
+    <li><a href=@routes.HomeController.login("user001", "pass001")>Login</a></li>
+    <li><a href=@routes.HomeController.login("user001", "pass002")>Login with incorrect pass</a></li>
+    <li><a href=@routes.HomeController.login("random_user", "random_pass")>Login with unexisting user</a></li>
+    <li><a href=@routes.HomeController.priv()>Private page (manual auth)</a></li>
+    <li><a href=@routes.HomeController.privPlay()>Private page (play auth)</a></li>
+    <li><a href=@routes.HomeController.privAction()>Private page (play action auth)</a></li>
+    <li><a href=@routes.HomeController.logout()>Logout</a></li>
+  </ul>
 }
