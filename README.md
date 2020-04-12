@@ -22,4 +22,4 @@ You'll see listed several endpoints, each showing one of the concepts presented 
 * Logout
 * Login with incorrect username and/or password
 
-This app has harcoded a single user: `user001` and password `pass001`. You can extend it by creating a registration form, or by simply adding more hardcoded users on the UserDAO..
+This app has harcoded a single user: `user001` and password `pass001`. You can extend it by creating a registration form, or by simply adding more [hardcoded users on the UserDAO](https://github.com/pedrorijo91/play-auth-example/blob/master/app/models/UserDAO.scala#L10).
